@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
 
-const app = () => {
+const App = () => {
   return (
-    <h1 class="text-4xl font-light underline text-indigo-600">
-    Hello world!
-  </h1>
-  )
-}
+    <main>
+      <NavBar />
+      <Hero />
+    </main>
+  );
+};
 
-export default app
+export default App;
