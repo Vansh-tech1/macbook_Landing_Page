@@ -101,7 +101,10 @@ const Features = () => {
 
       <div className="absolute inset-0">
         {features.map((feature, index) => (
-          <div className={clsx("box", `box${index + 1}`, feature.styles)}>
+          <div
+            className={clsx("box", `box${index + 1}`, feature.styles)}
+            key={feature.id}
+          >
             <img src={feature.icon} alt={feature.highlight} />
             <p>
               <span className="text-white">{feature.highlight}</span>
